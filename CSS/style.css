@@ -100,7 +100,7 @@ header {
 }
 
 .button:hover {
-    background-image: linear-gradient(to right, #9356DC, #FF79DA 0%);
+    opacity: 0.8;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.55);
     background-position: right;
     transition: all 0.3s ease-in-out;
@@ -557,7 +557,7 @@ span::first-letter {
 }
 
 .button-2:hover {
-    background-image: linear-gradient(to right, #9356DC, #FF79DA 0%);
+    opacity: 0.8;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.55);
     transition: 0.3s;
     width: 50%;
@@ -603,6 +603,12 @@ span::first-letter {
     border: 5px solid #FFF;
     border-bottom-color: #9356DC;
     border-radius: 50%;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    position:fixed;
     animation: rotation 1s linear infinite;
 }
     

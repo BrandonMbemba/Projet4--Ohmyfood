@@ -1,0 +1,30 @@
+$color_1: transparent;
+
+.content_right {
+	margin-right: 25px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	&:hover {
+		.checked {
+			transform: scale(1.1);
+		}
+	}
+}
+hearts {
+	width: 24px;
+	height: 24px;
+}
+.font-sizeicon {
+	font-size: 25px;
+}
+.checked {
+	background: linear-gradient(to top, #9356DC, #FF79DA);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: $color_1;
+	transition: all 0.3s;
+	cursor: pointer;
+	transform: scale(0);
+	position: absolute;
+}

@@ -1,0 +1,39 @@
+$color_1: #FFFFFF;
+$font-family_1: "Roboto", sans-serif;
+$font-family_2: 'Shrikhand', sans-serif;
+
+.footer {
+	background: #353535;
+	color: $color_1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: $font-family_1;
+	a {
+		color: $color_1;
+		text-decoration-line: unset;
+	}
+}
+.footer_container {
+	padding: 25px 0;
+	display: grid;
+	gap: 10px;
+	width: 90vw;
+	max-width: 490px;
+}
+.footer_container_menu {
+	padding-left: 25px;
+}
+#footertitle {
+	font-family: $font-family_2;
+	font-size: 18px;
+	font-weight: 300;
+}
+.footerpart1 {
+	display: grid;
+	gap: 10px;
+}
+.footerpart2 {
+	display: grid;
+	gap: 10px;
+}

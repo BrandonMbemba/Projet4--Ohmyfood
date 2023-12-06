@@ -1,0 +1,61 @@
+$color_1: #008766;
+$font-family_1: 'Roboto', sans-serif;
+
+.cardRestaurant {
+	max-width: 490px;
+	position: relative;
+	display: grid;
+	border-radius: 15px;
+	box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35);
+		background-position: right;
+		transition: all 0.3s ease-in-out;
+	}
+	.newRestaurant {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		z-index: 0;
+		top: 10px;
+		right: 10px;
+		background: #99E2D0;
+		box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+		border-radius: 2px;
+		width: 80px;
+		height: 29px;
+		p {
+			color: $color_1;
+			font-weight: 500;
+			font-size: 14px;
+		}
+	}
+	img {
+		border-radius: 15px 15px 0 0;
+		height: 174px;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+.cardRestaurant_content {
+	background: #FFFFFF;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 0 0 15px 15px;
+}
+.content_left {
+	padding-left: 10px;
+	h3 {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 5px;
+		font-family: $font-family_1;
+	}
+	p {
+		font-size: 17px;
+		font-weight: 300;
+		margin-top: 0px;
+	}
+}

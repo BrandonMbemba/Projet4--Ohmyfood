@@ -175,12 +175,12 @@ header {
     align-items: center;
 }
 
-.couleur-i1 {
-    color: #7e7e7e;
+.contour-etape i:hover {
+    color: #9356DC;
 }
 
-.couleur-i2 {
-    color: #9356DC;
+.couleur-i1 {
+    color: #7e7e7e;
 }
 
 .contour-etape h3 {

@@ -37,3 +37,33 @@ $font-family_2: 'Shrikhand', sans-serif;
 	display: grid;
 	gap: 10px;
 }
+
+@media only screen and (min-width: 775px) {
+
+.footer_container {
+	display: flex;
+	justify-content: end;
+	align-items: last baseline;
+	width: 100%;
+	max-width: none;
+	padding: 30px 50px;
+	height: 114px;
+	gap: 30px;
+	h2 {
+		order: 3;
+		margin: 0;
+		margin-left: 30px;
+	}
+}
+.footerpart1 {
+	display: flex;
+	order: 1;
+	gap: 10px;
+}
+.footerpart2 {
+	display: flex;
+	order: 2;
+	gap: 10px;
+}
+
+}

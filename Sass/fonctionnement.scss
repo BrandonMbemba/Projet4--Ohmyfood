@@ -1,0 +1,75 @@
+$color_1: #FFFFFF;
+$color_2: #9356DC;
+$color_3: #7e7e7e;
+$font-family_1: 'Roboto', sans-serif;
+
+.fonctionnement {
+	display: grid;
+	justify-items: center;
+}
+.fonctionnementcontainer {
+	padding-top: 25px;
+	h2 {
+		font-family: $font-family_1;
+		margin-left: 5px;
+	}
+}
+.fonctionnementdispo {
+	padding-top: 25px;
+	padding-bottom: 48px;
+	display: grid;
+	gap: 25px;
+}
+.contour-etape {
+	display: flex;
+	height: 72px;
+	background: #F6F6F6;
+	border-radius: 20px;
+	box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+	padding-right: 65px;
+	margin-left: 15px;
+	max-width: 323px;
+	position: relative;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35);
+		background-position: right;
+		transition: all 0.3s ease-in-out;
+	}
+	span {
+		position: absolute;
+		top: 24px;
+		left: -12px;
+		color: $color_1;
+		background: #9256DC;
+		border-radius: 50%;
+		height: 24px;
+		width: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		font-family: $font-family_1;
+	}
+	i {
+		width: 74px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			color: $color_2;
+		}
+	}
+	h3 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 500;
+		font-size: 16px;
+		font-family: $font-family_1;
+	}
+}
+.couleur-i1 {
+	color: $color_3;
+}

@@ -711,8 +711,12 @@ body {
     justify-content: stretch;
 }
 
+.body-container {
+    max-width: unset;
+}
+
 .main-container {
-    max-width: 1440px;
+    max-width: unset;
 }
 
 /**** Recherche ****/
@@ -789,7 +793,7 @@ body {
 /**** Menu Restaurants ****/
 
 .main-container-menu {
-    max-width: 1440px;
+    max-width: unset;
 }
 
 .image-restaurants img {

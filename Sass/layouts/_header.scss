@@ -1,0 +1,30 @@
+$font-family_1: "Shrikhand", serif;
+
+header {
+	height: 63px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 2px 4px 0px #00000026;
+	position: relative;
+	nav {
+		position: absolute;
+		left: 1em;
+	}
+}
+.menu-restaurants-header {
+	display: flex;
+	justify-content: space-around;
+	gap: 24px;
+	h2 {
+		font-family: $font-family_1;
+		font-size: 28px;
+		font-weight: 400;
+	}
+}
+@media only screen and (min-width: 775px) {
+	.menu-restaurants-header {
+		@include Center
+	}
+}

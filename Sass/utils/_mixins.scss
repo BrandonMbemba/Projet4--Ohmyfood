@@ -1,0 +1,51 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin Center {
+    justify-content: center;
+}
+
+@mixin flex-wrap {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@mixin flex-end {
+    display: flex;
+    justify-content: end;
+    align-items: last baseline;
+}
+
+@mixin main-container {
+    max-width: 1024px;
+    padding: 0px;
+}
+
+@mixin main-conainer-menu {
+    max-width: 1024px;
+    padding: 0px;
+    display: grid;
+}
+
+@mixin hide-during-loading {
+    animation: hidden_body_container 3s linear forwards;
+    overflow: hidden;
+}
+  @keyframes hidden_body_container {
+    0% {
+      height: 0px;
+    }
+
+    90% {
+      height: 0px;
+    }
+
+    100% {
+      height: auto;
+      overflow: visible;
+    }
+}

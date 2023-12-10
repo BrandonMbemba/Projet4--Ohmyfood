@@ -1,0 +1,21 @@
+@import "themes/theme";
+
+@import "base/normalize";
+@import "base/typography";
+
+@import "./utils/mixins";
+
+@import "components/button";
+@import "components/cardRestaurants";
+@import "components/contour-etape";
+@import "components/loader";
+@import "components/menu-choice";
+
+@import "layouts/footer";
+@import "layouts/header";
+@import "layouts/menu_body";
+@import "layouts/restaurants";
+@import "layouts/ville-form";
+
+@import "./pages/index";
+@import "./pages/restaurant-page"

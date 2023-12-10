@@ -1,0 +1,134 @@
+$color_1: white;
+$color_2: #353535;
+$font-family_1: 'Roboto', sans-serif;
+$font-family_2: "Roboto", sans-serif;
+$background-color_1: #99E2D0;
+$background-color_2: #FFFFFF;
+
+.menu-restaurants-entrees-plat-dessert {
+	@include flex-wrap;
+	fieldset {
+		padding: 0;
+		padding-bottom: 10px;
+		display: grid;
+		gap: 10px;
+		width: 100%;
+		max-width: 634px;
+		font-family: $font-family_1;
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: 300;
+		position: relative;
+		margin-bottom: 25px;
+	}
+}
+legend {
+	font-family: $font-family_1;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 300;
+	position: relative;
+	margin-bottom: 25px;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 1.5rem;
+		height: 0.2rem;
+		width: 2.5rem;
+		background-color: $background-color_1;
+	}
+}
+.plats {
+	display: flex;
+	width: 100%;
+	background-color: $background-color_2;
+	font-family: $font-family_1;
+	border-radius: 20px;
+	box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+	transform: translateX(-600px);
+	opacity: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	label {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		border-radius: 20px;
+		background-color: $background-color_2;
+		overflow: hidden;
+		font-family: $font-family_2;
+	}
+	&:hover {
+		.selected {
+			width: 60px;
+		}
+	}
+}
+label {
+	&:hover {
+		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
+		background-position: right;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+}
+input[type=radio] {
+	display: none;
+}
+.partie_gauche {
+	padding: 10px 0 10px 15px;
+	min-width: 0;
+	span {
+		display: block;
+		margin: 5px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		&:first-child {
+			text-transform: lowercase;
+			font-weight: 800;
+			font-size: 1em;
+		}
+		&:last-child {
+			text-transform: lowercase;
+			font-size: 0.9em;
+		}
+	}
+}
+span {
+	&::first-letter {
+		text-transform: capitalize;
+	}
+}
+.partie_droite {
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+	.selected {
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		width: 0px;
+		align-items: center;
+		color: $color_1;
+		background-color: $background-color_1;
+		border-radius: 0 20px 20px 0;
+		font-size: 25px;
+		transition: all 0.3s ease-in-out;
+		cursor: pointer;
+	}
+}
+.prix {
+	color: $color_2;
+	font-weight: 700;
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+
+@media only screen and (min-width: 775px) {
+	.menu-restaurants-entrees-plat-dessert {
+		display: grid;
+		justify-content: stretch;
+		justify-items: center;
+	}
+}

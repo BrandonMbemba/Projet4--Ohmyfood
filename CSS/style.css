@@ -460,6 +460,7 @@ legend::before {
     transform: translateX(-600px);
     opacity: 0;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .plats label {
@@ -485,6 +486,7 @@ input[type=radio] {
 
 .partie_gauche {
     padding: 10px 0 10px 15px;
+    min-width: 0;
 }
 
 .partie_gauche span {
@@ -492,6 +494,7 @@ input[type=radio] {
     margin: 5px;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .partie_gauche span:first-child {

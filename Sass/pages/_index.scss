@@ -3,3 +3,36 @@ body {
         @include main-container;
     }
 }
+
+
+@media only screen and (min-width: 775px) {
+	body {
+		display: flex;
+		justify-content: stretch;
+	}
+	.body-container {
+		max-width: unset;
+	}
+	.main-container {
+		max-width: unset;
+	}
+}
+
+
+
+@keyframes hidden_body_container {
+	0% {
+		height: 0px;
+	}
+	90% {
+		height: 0px;
+	}
+	100% {
+		height: auto;
+		overflow: visible;
+	}
+}
+.hide-during-loading {
+	animation: hidden_body_container 3s linear forwards;
+	overflow: hidden;
+}

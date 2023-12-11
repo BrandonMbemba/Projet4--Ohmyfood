@@ -3,3 +3,21 @@ body {
         @include main-conainer-menu;
     }
 }
+
+
+@media only screen and (min-width: 775px) {
+	body {
+		display: flex;
+		justify-content: stretch;
+	}
+	.body-container {
+		max-width: unset;
+	}
+	.main-container {
+		max-width: unset;
+	}
+
+	.main-container-menu {
+		max-width: unset;
+	}
+}

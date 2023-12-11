@@ -10,12 +10,16 @@
 @import "components/contour-etape";
 @import "components/loader";
 @import "components/menu-choice";
+@import "./components/image-restaurants";
 
 @import "layouts/footer";
 @import "layouts/header";
 @import "layouts/menu_body";
 @import "layouts/restaurants";
 @import "layouts/ville-form";
+@import "./layouts/body-form.scss";
+@import "./layouts/fonctionnement-container";
+@import "./layouts/menu-restaurants-header";
 
 @import "./pages/index";
 @import "./pages/restaurant-page"

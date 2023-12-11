@@ -20,6 +20,12 @@
     align-items: last baseline;
 }
 
+@mixin fonctionnement {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+}
+
 @mixin main-container {
     max-width: 1024px;
     padding: 0px;

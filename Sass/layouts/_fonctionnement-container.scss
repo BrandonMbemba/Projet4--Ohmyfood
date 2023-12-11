@@ -1,0 +1,35 @@
+$font-family_1: 'Roboto', sans-serif;
+
+.fonctionnement {
+	display: grid;
+	justify-items: center;
+}
+.fonctionnementcontainer {
+	padding-top: 25px;
+	h2 {
+		font-family: $font-family_1;
+		margin-left: 5px;
+	}
+}
+.fonctionnementdispo {
+	padding-top: 25px;
+	padding-bottom: 48px;
+	display: grid;
+	gap: 25px;
+}
+@media only screen and (min-width: 775px) {
+	.fonctionnementcontainer {
+		width: 90vw;
+		max-width: 1080px;
+		margin: auto;
+		position: relative;
+		h2 {
+			margin-left: 0;
+		}
+	}
+
+    .fonctionnementdispo {
+        @include fonctionnement
+}
+
+}

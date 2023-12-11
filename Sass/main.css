@@ -15,6 +15,12 @@ body {
   margin: 0px;
 }
 
+@media only screen and (min-width: 775px) {
+  body {
+    display: flex;
+    justify-content: stretch;
+  }
+}
 @keyframes hidden_body_container {
   0% {
     height: 0px;
@@ -27,6 +33,11 @@ body {
     overflow: visible;
   }
 }
+.commande {
+  display: flex;
+  justify-content: center;
+}
+
 .button {
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -406,11 +417,77 @@ span::first-letter {
   margin-right: 15px;
 }
 
+@keyframes anim-arrivee-des-plats {
+  0% {
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    transform: translateX(-600px);
+  }
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateX(-8px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.menu-restaurants-entrees-plat-dessert #entree-1 {
+  animation: anim-arrivee-des-plats 0.8s ease-in-out 0.1s 1 normal forwards;
+}
+.menu-restaurants-entrees-plat-dessert #entree-2 {
+  animation: anim-arrivee-des-plats 0.8s ease-in-out 0.2s 1 normal forwards;
+}
+.menu-restaurants-entrees-plat-dessert #entree-3 {
+  animation: anim-arrivee-des-plats 0.8s ease-in-out 0.3s 1 normal forwards;
+}
+.menu-restaurants-entrees-plat-dessert #entree-4 {
+  animation: anim-arrivee-des-plats 0.8s ease-in-out 0.4s 1 normal forwards;
+}
+.menu-restaurants-entrees-plat-dessert #plats-1 {
+  animation: anim-arrivee-des-plats 0.8s ease-in-out 0.8s 1 normal forwards;
+}
+.menu-restaurants-entrees-plat-dessert #plats-2 {
+  animation: anim-arrivee-des-plats 0.8s ease-in-out 0.9s 1 normal forwards;
+}
+.menu-restaurants-entrees-plat-dessert #plats-3 {
+  animation: anim-arrivee-des-plats 0.8s ease-in-out 1s 1 normal forwards;
+}
+.menu-restaurants-entrees-plat-dessert #dessert-1 {
+  animation: anim-arrivee-des-plats 0.8s ease-in-out 1.6s 1 normal forwards;
+}
+.menu-restaurants-entrees-plat-dessert #dessert-2 {
+  animation: anim-arrivee-des-plats 0.8s ease-in-out 1.7s 1 normal forwards;
+}
+.menu-restaurants-entrees-plat-dessert #dessert-3 {
+  animation: anim-arrivee-des-plats 0.8s ease-in-out 1.8s 1 normal forwards;
+}
+
 @media only screen and (min-width: 775px) {
   .menu-restaurants-entrees-plat-dessert {
     display: grid;
     justify-content: stretch;
     justify-items: center;
+  }
+}
+.image-restaurants img {
+  width: 100%;
+  height: 36vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 775px) {
+  .image-restaurants img {
+    -o-object-position: 50% 60%;
+       object-position: 50% 60%;
   }
 }
 .footer {
@@ -495,6 +572,12 @@ header nav {
   left: 1em;
 }
 
+.full {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
 .menu-restaurants-header {
   display: flex;
   justify-content: space-around;
@@ -539,6 +622,14 @@ header nav {
   }
   .main-container-menu {
     max-width: unset;
+  }
+  .body-menu-restaurants {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .le-menu {
+    width: 70%;
   }
 }
 /**** Container ****/
@@ -615,13 +706,138 @@ header nav {
   width: 100%;
 }
 
+.body-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 30px 50px 30px;
+  background: #F6F6F6;
+  position: relative;
+}
+.body-form h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.fw {
+  font-weight: 300;
+  margin: 0px 0px 30px 0px;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 775px) {
+  .body-form h2 {
+    font-size: 40px;
+  }
+}
+.fonctionnement {
+  display: grid;
+  justify-items: center;
+}
+
+.fonctionnementcontainer {
+  padding-top: 25px;
+}
+.fonctionnementcontainer h2 {
+  font-family: "Roboto", sans-serif;
+  margin-left: 5px;
+}
+
+.fonctionnementdispo {
+  padding-top: 25px;
+  padding-bottom: 48px;
+  display: grid;
+  gap: 25px;
+}
+
+@media only screen and (min-width: 775px) {
+  .fonctionnementcontainer {
+    width: 90vw;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+  }
+  .fonctionnementcontainer h2 {
+    margin-left: 0;
+  }
+  .fonctionnementdispo {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+  }
+}
+.menu-restaurants-header {
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+}
+.menu-restaurants-header h2 {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 775px) {
+  .menu-restaurants-header {
+    justify-content: center;
+  }
+}
 body .body_container {
   max-width: 1024px;
   padding: 0px;
+}
+
+@media only screen and (min-width: 775px) {
+  body {
+    display: flex;
+    justify-content: stretch;
+  }
+  .body-container {
+    max-width: unset;
+  }
+  .main-container {
+    max-width: unset;
+  }
+}
+@keyframes hidden_body_container {
+  0% {
+    height: 0px;
+  }
+  90% {
+    height: 0px;
+  }
+  100% {
+    height: auto;
+    overflow: visible;
+  }
+}
+.hide-during-loading {
+  animation: hidden_body_container 3s linear forwards;
+  overflow: hidden;
 }
 
 body .body_container {
   max-width: 1024px;
   padding: 0px;
   display: grid;
+}
+
+@media only screen and (min-width: 775px) {
+  body {
+    display: flex;
+    justify-content: stretch;
+  }
+  .body-container {
+    max-width: unset;
+  }
+  .main-container {
+    max-width: unset;
+  }
+  .main-container-menu {
+    max-width: unset;
+  }
 }/*# sourceMappingURL=main.css.map */
